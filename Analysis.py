@@ -24,11 +24,6 @@ def convert_energy(energy):
     return energy
 
 
-
-
-F=glob.glob("xvgs/*.xvg")
-F.sort()
-
 def sum(file):
     f=read_xvg(file,ncol=3)
     a=f[1]
@@ -36,6 +31,10 @@ def sum(file):
     sum=a+b
     sum=convert_energy(sum)
     return sum
+
+
+F=glob.glob("xvgs/*.xvg")
+F.sort()
 
 
 
