@@ -1,6 +1,6 @@
 for val in {1..129}
     do 
-        echo 21 22 0 |gmx energy -f rerun_$val.edr -o Ei_$val.xvg 
+        echo "Coul-SR:group1-group2\nLJ-SR:group1-group2" 0 |gmx energy -f rerun_$val.edr -o Ei_$val.xvg 
     done
 wait
 
